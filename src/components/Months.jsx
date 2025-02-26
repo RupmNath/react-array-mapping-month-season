@@ -15,22 +15,22 @@ const Months = () => {
         { MONTH: "NOVEMBER" },
         { MONTH: "DECEMBER" }
     ];
-    
+
     return (
         <>
-        <div className="container">
-            <div className="row p-1 shadow rounded">
-                {monthNames.map((month, index) => (
-                    <div key={index} className="col-lg-3 col-md-4 col-sm-6 p-2">
-                    <div className="text-center shadow">
-                        <Month
-                            MONTH= {month.MONTH}
-                        />
-                    </div>
+            <div className="container">
+                <div className="row p-1 shadow rounded">
+                    {monthNames.map((month, index) => (
+                        <div key={index} className="col-lg-3 col-md-4 col-sm-6 p-2">
+                            <div className="text-center shadow">
+                                <Month
+                            MONTH = {month.MONTH}
+                                />
+                            </div>
+                        </div>
+                    ))}
                 </div>
-                ))}
             </div>
-        </div>
         </>
     );
 }
